@@ -1,0 +1,74 @@
+import { siteConfig } from '../config/site'
+
+export function Footer() {
+  return (
+    <footer className="bg-navy text-white">
+      <div className="container-page py-12 sm:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p className="text-xl font-extrabold tracking-[0.24em]">NUVION</p>
+            <p className="mt-2 text-sm text-white/65">{siteConfig.tagline}</p>
+            <p className="mt-4 text-xs leading-relaxed text-white/50">
+              {siteConfig.prototypeNotice}
+            </p>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-brand-cyan">
+              Navegação
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-white/75">
+              <li>
+                <a href="#inicio" className="hover:text-white">
+                  Início
+                </a>
+              </li>
+              <li>
+                <a href="#solucoes" className="hover:text-white">
+                  Soluções
+                </a>
+              </li>
+              <li>
+                <a href="#contato" className="hover:text-white">
+                  Contato
+                </a>
+              </li>
+              <li>
+                <a href="/privacidade.html" className="hover:text-white">
+                  Política de Privacidade
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-brand-cyan">
+              Contato
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-white/75">
+              <li>
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-white">
+                  {siteConfig.email}
+                </a>
+              </li>
+              <li>WhatsApp: {siteConfig.whatsapp.display}</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wider text-brand-cyan">
+              Aviso
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-white/75">
+              A Nuvion é uma empresa independente e não representa a Microsoft.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
+          <p>© Nuvion. Protótipo visual para validação da Etapa 1.</p>
+        </div>
+      </div>
+    </footer>
+  )
+}
