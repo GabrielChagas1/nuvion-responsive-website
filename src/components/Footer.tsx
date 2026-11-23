@@ -7,9 +7,9 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <img
-              src="/brand/logo.jpg"
+              src="/brand/nuvia-it-logo-completo-escuro.svg"
               alt={siteConfig.name}
-              className="h-8 w-auto rounded-lg bg-white/95 p-1"
+              className="h-12 w-auto"
             />
             <p className="mt-2 text-sm text-white/65">{siteConfig.tagline}</p>
             <p className="mt-4 text-xs leading-relaxed text-white/50">

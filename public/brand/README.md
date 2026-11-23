@@ -1,13 +1,11 @@
-# Arquivos da marca (placeholder)
+# Arquivos da marca
 
-A logo temporária atual é `logo.jpg`, copiada da referência enviada. Substitua por `logo.svg`, `logo-light.svg` e `favicon.svg` quando a identidade final estiver aprovada.
+Arquivos atuais da identidade NuviaIT:
 
-Esta pasta reserva o local dos arquivos finais da identidade visual.
+- `nuvia-it-navbar-claro.svg` - logo para navbar em fundo claro.
+- `nuvia-it-navbar-escuro.svg` - logo para navbar em fundo escuro.
+- `nuvia-it-logo-completo-claro.svg` - logo completo para fundo claro.
+- `nuvia-it-logo-completo-escuro.svg` - logo completo para fundo escuro.
+- `nuvia-it-icon.svg` - ícone/favicon.
 
-Arquivos sugeridos:
-
-- `logo.svg` - logo principal para fundos claros.
-- `logo-light.svg` - logo para fundos escuros.
-- `favicon.svg` - ícone do site.
-
-O favicon atual é apenas um marcador temporário com a letra "N". O cabeçalho usa temporariamente a imagem `logo.jpg` enviada como referência. Não use a prancha completa de identidade visual como logo.
+O site usa `nuvia-it-navbar-escuro.svg` no cabeçalho, `nuvia-it-logo-completo-escuro.svg` no rodapé e `nuvia-it-icon.svg` como favicon.

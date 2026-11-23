@@ -30,9 +30,9 @@ export function Header() {
           onClick={() => setIsOpen(false)}
         >
           <img
-            src="/brand/logo.jpg"
+            src="/brand/nuvia-it-navbar-escuro.svg"
             alt={siteConfig.name}
-            className="h-10 w-auto rounded-lg bg-white/95 p-1"
+            className="h-10 w-auto"
           />
           <span className="hidden h-5 w-px bg-white/25 sm:block" aria-hidden="true" />
           <span className="hidden truncate text-xs font-medium text-brand-cyan sm:block">
