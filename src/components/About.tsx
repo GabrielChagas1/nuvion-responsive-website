@@ -22,10 +22,10 @@ export function About() {
             Sobre a Nuvion
           </h2>
           <p className="section-lead">
-            A Nuvion nasce com o propósito de aproximar empresas de soluções tecnológicas que façam sentido para sua rotina. Nosso foco é entender cada necessidade e ajudar na escolha de ferramentas que contribuam para uma operação mais produtiva e conectada.
+            A NuviaIT nasce com o propósito de aproximar empresas de soluções tecnológicas que façam sentido para sua rotina. Nosso foco é entender cada necessidade e ajudar na escolha de ferramentas que contribuam para uma operação mais produtiva e conectada.
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-            A Nuvion é uma empresa independente. Não representamos a Microsoft nem afirmamos certificações, títulos ou autorizações que ainda não tenham sido confirmados.
+            A NuviaIT é uma empresa independente. Não representamos a Microsoft nem afirmamos certificações, títulos ou autorizações que ainda não tenham sido confirmados.
           </p>
         </div>
 

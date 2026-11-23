@@ -6,7 +6,11 @@ export function Footer() {
       <div className="container-page py-12 sm:py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="text-xl font-extrabold tracking-[0.24em]">NUVION</p>
+            <img
+              src="/brand/logo.jpg"
+              alt={siteConfig.name}
+              className="h-8 w-auto rounded-lg bg-white/95 p-1"
+            />
             <p className="mt-2 text-sm text-white/65">{siteConfig.tagline}</p>
             <p className="mt-4 text-xs leading-relaxed text-white/50">
               {siteConfig.prototypeNotice}
@@ -66,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
-          <p>© Nuvion. Protótipo visual para validação da Etapa 1.</p>
+          <p>© NuviaIT. Protótipo visual para validação da Etapa 1.</p>
         </div>
       </div>
     </footer>

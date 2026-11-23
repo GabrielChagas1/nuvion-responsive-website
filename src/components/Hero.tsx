@@ -55,7 +55,7 @@ export function Hero() {
             </span>
             <div>
               <p className="text-sm font-semibold text-white">Ambiente de trabalho conectado</p>
-              <p className="text-xs text-white/60">Protótipo visual da proposta Nuvion</p>
+              <p className="text-xs text-white/60">Protótipo visual da proposta NuviaIT</p>
             </div>
           </div>
 

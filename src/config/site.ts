@@ -1,13 +1,13 @@
 export const siteConfig = {
-  name: 'Nuvion',
+  name: 'NuviaIT',
   tagline: 'Technology with Purpose.',
-  domain: 'https://www.nuvion.example',
+  domain: 'https://www.nuviait.example',
   whatsapp: {
     number: '5511000000000',
     display: '(11) 00000-0000',
-    message: 'Olá! Conheci a Nuvion pelo site e gostaria de saber mais sobre as soluções Microsoft para minha empresa.',
+    message: 'Olá! Conheci a NuviaIT pelo site e gostaria de saber mais sobre as soluções Microsoft para minha empresa.',
   },
-  email: 'contato@nuvion.example',
+  email: 'contato@nuviait.example',
   navigation: [
     { label: 'Início', href: '#inicio' },
     { label: 'Soluções', href: '#solucoes' },

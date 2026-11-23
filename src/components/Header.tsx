@@ -29,9 +29,11 @@ export function Header() {
           className="flex min-w-0 items-center gap-3 text-white"
           onClick={() => setIsOpen(false)}
         >
-          <span className="truncate text-xl font-extrabold tracking-[0.24em] sm:text-2xl">
-            NUVION
-          </span>
+          <img
+            src="/brand/logo.jpg"
+            alt={siteConfig.name}
+            className="h-10 w-auto rounded-lg bg-white/95 p-1"
+          />
           <span className="hidden h-5 w-px bg-white/25 sm:block" aria-hidden="true" />
           <span className="hidden truncate text-xs font-medium text-brand-cyan sm:block">
             {siteConfig.tagline}

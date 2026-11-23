@@ -1,15 +1,15 @@
-# Projeto Nuvion --- Briefing para desenvolvimento do site institucional
+# Projeto NuviaIT --- Briefing para desenvolvimento do site institucional
 
 > **Documento de referência para usar no OpenCode.**\
 > Objetivo: orientar a criação de um site institucional simples,
-> profissional, responsivo e seguro para a Nuvion, marca comercial em
+> profissional, responsivo e seguro para a NuviaIT, marca comercial em
 > fase de definição para uma operação de revenda de soluções Microsoft.
 
 ------------------------------------------------------------------------
 
 ## 1. Contexto do projeto
 
-A Nuvion será a marca comercial utilizada na comunicação com os
+A NuviaIT será a marca comercial utilizada na comunicação com os
 clientes. A identidade visual enviada é uma **referência inicial e
 provisória**, ainda não aprovada como identidade definitiva.
 
@@ -25,9 +25,9 @@ O site deve transmitir:
 -   Segurança e confiança.
 -   Tecnologia aplicada a necessidades reais de negócio.
 
-**Importante:** a Nuvion deve ser apresentada como uma revenda/empresa
+**Importante:** a NuviaIT deve ser apresentada como uma revenda/empresa
 independente. Não utilizar linguagem, elementos ou afirmações que deem a
-entender que a Nuvion é a própria Microsoft ou que possui certificações,
+entender que a NuviaIT é a própria Microsoft ou que possui certificações,
 títulos, status de parceiro ou autorizações que ainda não tenham sido
 confirmados.
 
@@ -208,7 +208,7 @@ compromisso operacional definido.
 
 Texto-base editável:
 
-"A Nuvion nasce com o propósito de aproximar empresas de soluções
+"A NuviaIT nasce com o propósito de aproximar empresas de soluções
 tecnológicas que façam sentido para sua rotina. Nosso foco é entender
 cada necessidade e ajudar na escolha de ferramentas que contribuam para
 uma operação mais produtiva e conectada."
@@ -258,12 +258,12 @@ Comportamento esperado:
 
 ### 5.7 Rodapé
 
--   Nome e marca Nuvion.
+-   Nome e marca NuviaIT.
 -   Links para Início, Soluções, Contato e Política de Privacidade.
 -   Canal de contato, quando fornecido.
 -   Identificação jurídica somente depois que razão social, CNPJ e dados
     forem confirmados.
--   Aviso de que a Nuvion é uma empresa independente e não representa a
+-   Aviso de que a NuviaIT é uma empresa independente e não representa a
     Microsoft, caso necessário para evitar confusão de marca.
 
 ## 6. WhatsApp
@@ -278,7 +278,7 @@ número real ser fornecido.
 
 Mensagem inicial sugerida:
 
-"Olá! Conheci a Nuvion pelo site e gostaria de saber mais sobre as
+"Olá! Conheci a NuviaIT pelo site e gostaria de saber mais sobre as
 soluções Microsoft para minha empresa."
 
 **Não inventar número de WhatsApp.** Enquanto o número não for
@@ -450,7 +450,7 @@ Não prometer primeira posição no Google.
 
 A primeira versão só estará pronta quando:
 
--   [ ] A página apresentar corretamente a Nuvion e suas soluções.
+-   [ ] A página apresentar corretamente a NuviaIT e suas soluções.
 -   [ ] A identidade visual seguir a referência provisória.
 -   [ ] O site funcionar em celular e desktop.
 -   [ ] Todos os links de navegação levarem ao destino correto.
@@ -529,7 +529,7 @@ Preencher quando estiverem definidas:
   -----------------------------------------------------------------------
   Informação                          Status
   ----------------------------------- -----------------------------------
-  Nome comercial Nuvion               Provisório
+  Nome comercial NuviaIT               Provisório
 
   Logo final                          Pendente
 

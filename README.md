@@ -1,6 +1,6 @@
-# Nuvion - Site institucional (protótipo Etapa 1)
+# NuviaIT - Site institucional (protótipo Etapa 1)
 
-Protótipo visual da landing page institucional da Nuvion. Esta etapa entrega a estrutura visual, responsividade, acessibilidade básica, SEO inicial e o formulário com validação no navegador. **O envio real por e-mail ainda não está implementado.**
+Protótipo visual da landing page institucional da NuviaIT. Esta etapa entrega a estrutura visual, responsividade, acessibilidade básica, SEO inicial e o formulário com validação no navegador. **O envio real por e-mail ainda não está implementado.**
 
 ## Pré-requisitos
 
@@ -47,7 +47,7 @@ public/
 
 O frontend pode ser publicado com GitHub Pages usando o workflow em `.github/workflows/deploy.yml`.
 
-Atenção: o GitHub Pages é gratuito para repositórios públicos, mas os termos do GitHub informam que ele não deve ser usado como hospedagem gratuita para executar um negócio online, site de e-commerce ou plataforma comercial. Para um site institucional comercial da Nuvion, confirme os termos atuais ou prefira um plano pago/provedor com uso comercial permitido.
+Atenção: o GitHub Pages é gratuito para repositórios públicos, mas os termos do GitHub informam que ele não deve ser usado como hospedagem gratuita para executar um negócio online, site de e-commerce ou plataforma comercial. Para um site institucional comercial da NuviaIT, confirme os termos atuais ou prefira um plano pago/provedor com uso comercial permitido.
 
 1. Crie um repositório no GitHub e envie o projeto.
 2. No repositório, acesse **Settings > Pages**.
