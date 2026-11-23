@@ -19,7 +19,7 @@ export function About() {
       <div className="container-page grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div>
           <h2 id="about-title" className="section-title">
-            Sobre a Nuvion
+            Sobre a NuviaIT
           </h2>
           <p className="section-lead">
             A NuviaIT nasce com o propósito de aproximar empresas de soluções tecnológicas que façam sentido para sua rotina. Nosso foco é entender cada necessidade e ajudar na escolha de ferramentas que contribuam para uma operação mais produtiva e conectada.

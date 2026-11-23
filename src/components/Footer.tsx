@@ -64,7 +64,7 @@ export function Footer() {
               Aviso
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/75">
-              A Nuvion é uma empresa independente e não representa a Microsoft.
+              A NuviaIT é uma empresa independente e não representa a Microsoft.
             </p>
           </div>
         </div>

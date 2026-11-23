@@ -73,7 +73,7 @@ export function Hero() {
               Como funciona
             </p>
             <p className="mt-2 text-sm leading-relaxed text-white/75">
-              A Nuvion entende sua necessidade, orienta sobre alternativas disponíveis e acompanha os próximos passos da contratação.
+              A NuviaIT entende sua necessidade, orienta sobre alternativas disponíveis e acompanha os próximos passos da contratação.
             </p>
           </div>
         </div>
