@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'NuviaIT',
-  tagline: 'Technology with Purpose.',
+  tagline: 'Nuvia, sua via para a Nuvem',
   domain: 'https://www.nuviait.example',
   whatsapp: {
     number: '5511000000000',
