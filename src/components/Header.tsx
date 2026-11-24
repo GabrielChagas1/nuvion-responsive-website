@@ -30,7 +30,7 @@ export function Header() {
           onClick={() => setIsOpen(false)}
         >
           <img
-            src="/brand/nuvia-it-navbar-escuro.svg"
+            src="./brand/nuvia-it-navbar-escuro.svg"
             alt={siteConfig.name}
             className="h-10 w-auto"
           />

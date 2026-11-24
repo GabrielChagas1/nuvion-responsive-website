@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <img
-              src="/brand/nuvia-it-logo-completo-escuro.svg"
+              src="./brand/nuvia-it-logo-completo-escuro.svg"
               alt={siteConfig.name}
               className="h-12 w-auto"
             />
