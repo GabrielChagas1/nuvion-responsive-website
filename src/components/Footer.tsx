@@ -67,7 +67,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
-          <p>© NuviaIT. Protótipo visual para validação da Etapa 1.</p>
+          <p>© NuviaIT.</p>
         </div>
       </div>
     </footer>
