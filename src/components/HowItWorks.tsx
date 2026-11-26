@@ -28,15 +28,8 @@ export function HowItWorks() {
         </p>
 
         <ol className="mt-12 grid gap-8 md:grid-cols-3">
-          {steps.map((step, index) => (
+          {steps.map((step) => (
             <li key={step.number} className="relative">
-              {index < steps.length - 1 ? (
-                <span
-                  className="absolute left-14 top-7 hidden h-px w-[calc(100%-3.5rem)] bg-brand-blue/20 md:block"
-                  aria-hidden="true"
-                />
-              ) : null}
-
               <div className="flex items-start gap-4">
                 <span className="flex h-14 w-14 flex-none items-center justify-center rounded-2xl bg-navy text-lg font-bold text-brand-cyan">
                   {step.number}
