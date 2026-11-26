@@ -1,5 +1,6 @@
 import { FormEvent, ReactNode, useState } from 'react'
-import { siteConfig } from '../config/site'
+import { siteConfig, whatsappUrl } from '../config/site'
+import { submitLead, type LeadPayload } from '../services/leadApi'
 
 type FormValues = {
   nome: string
@@ -113,7 +114,7 @@ function Field({
 export function Contact() {
   const [values, setValues] = useState<FormValues>(initialValues)
   const [errors, setErrors] = useState<FormErrors>({})
-  const [status, setStatus] = useState<'idle' | 'validated' | 'blocked'>('idle')
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   function update<K extends keyof FormValues>(field: K, value: FormValues[K]) {
     setValues((current) => ({ ...current, [field]: value }))
@@ -128,7 +129,7 @@ export function Contact() {
     })
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
     const nextErrors = validate(values)
@@ -139,12 +140,33 @@ export function Contact() {
       return
     }
 
-    if (values.website.trim() !== '') {
-      setStatus('blocked')
+    setStatus('submitting')
+
+    const payload: LeadPayload = {
+      nome: values.nome.trim(),
+      empresa: values.empresa.trim(),
+      email: values.email.trim(),
+      whatsapp: values.whatsapp.trim(),
+      solucao: values.solucao,
+      usuarios: values.usuarios,
+      mensagem: values.mensagem.trim(),
+      privacidade: values.privacidade,
+      website: values.website,
+    }
+
+    const result = await submitLead(payload)
+
+    if (result.ok) {
+      setValues(initialValues)
+      setErrors({})
+      setStatus('success')
       return
     }
 
-    setStatus('validated')
+    if (result.errors) {
+      setErrors(result.errors)
+    }
+    setStatus('error')
   }
 
   return (
@@ -318,23 +340,33 @@ export function Contact() {
             />
           </div>
 
-          {status === 'validated' ? (
+          {status === 'success' ? (
             <div className="mt-6 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800" role="status">
-              Protótipo: o formulário foi validado com sucesso. O envio real por e-mail será ativado na Etapa 2.
+              Solicitação enviada com sucesso. Nossa equipe entrará em contato.
+              <div className="mt-3">
+                <a
+                  href={whatsappUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-semibold text-emerald-900 underline"
+                >
+                  Continuar no WhatsApp
+                </a>
+              </div>
             </div>
           ) : null}
 
-          {status === 'blocked' ? (
-            <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800" role="alert">
-              Não foi possível processar o envio. Tente novamente.
+          {status === 'error' ? (
+            <div className="mt-6 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800" role="alert">
+              Não foi possível enviar sua solicitação agora. Tente novamente em instantes ou fale pelo WhatsApp.
             </div>
           ) : null}
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <button type="submit" className="btn-primary">
-              Enviar solicitação
+            <button type="submit" className="btn-primary" disabled={status === 'submitting'}>
+              {status === 'submitting' ? 'Enviando...' : 'Enviar solicitação'}
             </button>
-            <p className="text-xs text-muted">* Campos obrigatórios. Nesta etapa, o envio não é realizado.</p>
+            <p className="text-xs text-muted">* Campos obrigatórios.</p>
           </div>
         </form>
       </div>

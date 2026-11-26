@@ -59,6 +59,51 @@ O build usa caminhos relativos (`base: './'`), então funciona em subpasta do Gi
 
 Observação: esta etapa publica apenas o frontend. O formulário ainda não envia dados por e-mail.
 
+## Etapa 2 — Captura de leads (Cloudflare Pages + Worker)
+
+O formulário agora envia os dados para uma função serverless em `functions/api/lead.ts`.
+
+### Variáveis de ambiente
+
+Configure no painel da Cloudflare Pages (Settings > Environment variables):
+
+- `RESEND_API_KEY` — chave da API do Resend.
+- `LEAD_TO_EMAIL` — e-mail que receberá os leads.
+- `LEAD_FROM_EMAIL` — remetente verificado no Resend (opcional; padrão: `onboarding@resend.dev`).
+- `ALLOWED_ORIGIN` — origem permitida no CORS (opcional; padrão: `*`).
+
+No frontend, você pode definir:
+
+- `VITE_API_URL` — URL base da API, se for diferente do mesmo domínio.
+
+### Desenvolvimento local
+
+```bash
+npm run dev
+```
+
+Para testar a função localmente:
+
+```bash
+npm run build
+npx wrangler pages dev dist
+```
+
+### Testes
+
+```bash
+npm test
+```
+
+### Segurança implementada
+
+- Validação no cliente e no servidor.
+- Honeypot.
+- Rate limiting básico em memória.
+- CORS configurável.
+- Mensagens de erro genéricas.
+- Nenhum segredo no frontend.
+
 ## Dados fictícios e pendências
 
 Os valores abaixo são provisórios e devem ser substituídos antes de publicar:
