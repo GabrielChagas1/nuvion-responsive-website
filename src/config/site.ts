@@ -7,7 +7,7 @@ export const siteConfig = {
     display: '(11) 00000-0000',
     message: 'Olá! Conheci a NuviaIT pelo site e gostaria de saber mais sobre as soluções Microsoft para minha empresa.',
   },
-  email: 'contato@nuviait.example',
+  email: 'contato@nuviait.com.br',
   navigation: [
     { label: 'Início', href: '#inicio' },
     { label: 'Soluções', href: '#solucoes' },
