@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { HowItWorks } from './components/HowItWorks'
 import { Solutions } from './components/Solutions'
+import { Reveal } from './components/Reveal'
 import { WhatsAppButton } from './components/WhatsAppButton'
 
 export default function App() {
@@ -20,11 +21,21 @@ export default function App() {
       <Header />
 
       <main id="conteudo">
-        <Hero />
-        <Solutions />
-        <HowItWorks />
-        <About />
-        <Contact />
+        <Reveal>
+          <Hero />
+        </Reveal>
+        <Reveal delay={80}>
+          <Solutions />
+        </Reveal>
+        <Reveal delay={120}>
+          <HowItWorks />
+        </Reveal>
+        <Reveal delay={160}>
+          <About />
+        </Reveal>
+        <Reveal delay={200}>
+          <Contact />
+        </Reveal>
       </main>
 
       <Footer />

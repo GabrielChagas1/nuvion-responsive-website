@@ -4,7 +4,18 @@ import { CloseIcon, MenuIcon } from './icons'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const menuId = useId()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 8)
+    }
+
+    handleScroll()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   useEffect(() => {
     if (!isOpen) {
@@ -22,7 +33,12 @@ export function Header() {
   }, [isOpen])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur">
+    <header
+      className={[
+        'sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur transition-shadow duration-300',
+        isScrolled ? 'shadow-lg shadow-black/20' : '',
+      ].join(' ')}
+    >
       <div className="container-page flex h-20 items-center justify-between gap-4">
         <a
           href="#inicio"
