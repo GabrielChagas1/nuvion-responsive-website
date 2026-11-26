@@ -188,7 +188,9 @@ export function Contact() {
                 {siteConfig.email}
               </a>
             </p>
-            <p className="mt-1 text-sm text-muted">WhatsApp: {siteConfig.whatsapp.display}</p>
+            {siteConfig.whatsapp.configured ? (
+              <p className="mt-1 text-sm text-muted">WhatsApp: {siteConfig.whatsapp.display}</p>
+            ) : null}
           </div>
         </div>
 
@@ -342,16 +344,18 @@ export function Contact() {
           {status === 'success' ? (
             <div className="mt-6 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800" role="status">
               Solicitação enviada com sucesso. Nossa equipe entrará em contato.
-              <div className="mt-3">
-                <a
-                  href={whatsappUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 font-semibold text-emerald-900 underline"
-                >
-                  Continuar no WhatsApp
-                </a>
-              </div>
+              {siteConfig.whatsapp.configured ? (
+                <div className="mt-3">
+                  <a
+                    href={whatsappUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-semibold text-emerald-900 underline"
+                  >
+                    Continuar no WhatsApp
+                  </a>
+                </div>
+              ) : null}
             </div>
           ) : null}
 

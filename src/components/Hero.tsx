@@ -33,14 +33,16 @@ export function Hero() {
             <a href="#contato" className="btn-primary">
               Solicitar orçamento
             </a>
-            <a
-              href={whatsappUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              Falar pelo WhatsApp
-            </a>
+            {siteConfig.whatsapp.configured ? (
+              <a
+                href={whatsappUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+              >
+                Falar pelo WhatsApp
+              </a>
+            ) : null}
           </div>
 
         </div>

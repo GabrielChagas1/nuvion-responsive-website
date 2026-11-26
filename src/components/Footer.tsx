@@ -55,7 +55,9 @@ export function Footer() {
                   {siteConfig.email}
                 </a>
               </li>
-              <li>WhatsApp: {siteConfig.whatsapp.display}</li>
+              {siteConfig.whatsapp.configured ? (
+                <li>WhatsApp: {siteConfig.whatsapp.display}</li>
+              ) : null}
             </ul>
           </div>
 

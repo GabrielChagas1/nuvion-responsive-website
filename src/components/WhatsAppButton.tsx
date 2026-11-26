@@ -1,7 +1,11 @@
-import { whatsappUrl } from '../config/site'
+import { siteConfig, whatsappUrl } from '../config/site'
 import { WhatsAppIcon } from './icons'
 
 export function WhatsAppButton() {
+  if (!siteConfig.whatsapp.configured) {
+    return null
+  }
+
   return (
     <a
       href={whatsappUrl()}
