@@ -36,7 +36,7 @@ export function Header() {
     <header
       className={[
         'sticky top-0 z-50 border-b border-white/10 bg-navy/95 backdrop-blur transition-shadow duration-300',
-        isScrolled ? 'shadow-lg shadow-black/20' : '',
+        isScrolled ? 'shadow-xl shadow-black/30' : '',
       ].join(' ')}
     >
       <div className="container-page flex h-20 items-center justify-between gap-4">
