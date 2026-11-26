@@ -1,7 +1,7 @@
 import { siteConfig, whatsappUrl } from '../config/site'
 import { AppsIcon, CheckIcon } from './icons'
 
-const heroHighlights = ['Microsoft 365', 'E-mail corporativo', 'Colaboração em equipe']
+const heroHighlights = ['Microsoft 365', 'Azure', 'Copilot']
 
 export function Hero() {
   return (
