@@ -9,9 +9,12 @@ export function Footer() {
             <img
               src="./brand/nuvia-it-logo-completo-escuro.svg"
               alt={siteConfig.name}
-              className="h-12 w-auto"
+              className="h-8 w-auto"
             />
             <p className="mt-2 text-sm text-white/65">{siteConfig.tagline}</p>
+            <p className="mt-4 text-xs leading-relaxed text-white/60">
+              A NuviaIT aproxima empresas de soluções tecnológicas que façam sentido para sua rotina, ajudando na escolha de ferramentas para uma operação mais produtiva e conectada.
+            </p>
           </div>
 
           <div>
@@ -67,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-xs text-white/50">
-          <p>© NuviaIT.</p>
+          <p>© NuviaIT. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
