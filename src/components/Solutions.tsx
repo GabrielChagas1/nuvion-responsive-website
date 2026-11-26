@@ -1,5 +1,4 @@
 import { AppsIcon, CloudIcon, CollaborationIcon, MailIcon, ShieldIcon } from './icons'
-import { Reveal } from './Reveal'
 
 const solutions = [
   {
@@ -41,16 +40,14 @@ export function Solutions() {
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {solutions.map(({ title, description, icon: Icon }, index) => (
-            <Reveal key={title} delay={index * 70}>
-              <article className="card">
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-blue/10 text-brand-blue">
-                  <Icon className="h-6 w-6" />
-                </span>
-                <h3 className="mt-5 text-lg font-semibold text-navy">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{description}</p>
-              </article>
-            </Reveal>
+          {solutions.map(({ title, description, icon: Icon }) => (
+            <article key={title} className="card transition-transform hover:-translate-y-1">
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-blue/10 text-brand-blue">
+                <Icon className="h-6 w-6" />
+              </span>
+              <h3 className="mt-5 text-lg font-semibold text-navy">{title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{description}</p>
+            </article>
           ))}
         </div>
       </div>
