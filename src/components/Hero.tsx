@@ -43,9 +43,6 @@ export function Hero() {
             </a>
           </div>
 
-          <p className="mt-6 text-xs leading-relaxed text-white/50">
-            {siteConfig.prototypeNotice}
-          </p>
         </div>
 
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-card backdrop-blur-sm sm:p-8">

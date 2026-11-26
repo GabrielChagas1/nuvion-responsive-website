@@ -12,9 +12,6 @@ export function Footer() {
               className="h-12 w-auto"
             />
             <p className="mt-2 text-sm text-white/65">{siteConfig.tagline}</p>
-            <p className="mt-4 text-xs leading-relaxed text-white/50">
-              {siteConfig.prototypeNotice}
-            </p>
           </div>
 
           <div>

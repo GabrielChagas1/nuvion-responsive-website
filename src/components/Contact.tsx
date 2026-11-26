@@ -189,7 +189,6 @@ export function Contact() {
               </a>
             </p>
             <p className="mt-1 text-sm text-muted">WhatsApp: {siteConfig.whatsapp.display}</p>
-            <p className="mt-4 text-xs leading-relaxed text-muted">{siteConfig.prototypeNotice}</p>
           </div>
         </div>
 

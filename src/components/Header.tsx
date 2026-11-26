@@ -101,9 +101,6 @@ export function Header() {
             Solicitar orçamento
           </a>
 
-          <p className="mt-4 text-xs leading-relaxed text-white/50">
-            {siteConfig.prototypeNotice}
-          </p>
         </nav>
       ) : null}
     </header>
