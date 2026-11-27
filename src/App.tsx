@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { HowItWorks } from './components/HowItWorks'
 import { Solutions } from './components/Solutions'
+import { CookieBanner } from './components/CookieBanner'
 import { Reveal } from './components/Reveal'
 import { WhatsAppButton } from './components/WhatsAppButton'
 
@@ -40,6 +41,7 @@ export default function App() {
 
       <Footer />
       <WhatsAppButton />
+      <CookieBanner />
     </>
   )
 }
