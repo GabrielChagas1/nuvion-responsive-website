@@ -1,6 +1,7 @@
 import { FormEvent, ReactNode, useState } from 'react'
 import { siteConfig, whatsappUrl } from '../config/site'
 import { submitLead, type LeadPayload } from '../services/leadApi'
+import { trackGenerateLead } from '../services/analytics'
 
 type FormValues = {
   nome: string
@@ -160,6 +161,7 @@ export function Contact() {
       setValues(initialValues)
       setErrors({})
       setStatus('success')
+      trackGenerateLead()
       return
     }
 
