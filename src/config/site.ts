@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'NuviaIT',
   tagline: 'Nuvia, sua via para a Nuvem',
-  domain: 'https://www.nuviait.example',
+  domain: 'https://nuviait.com.br',
   whatsapp: {
     number: '',
     display: '',
